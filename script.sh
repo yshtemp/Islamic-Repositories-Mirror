@@ -1,10 +1,10 @@
-sudo apt install -y -q sox libsox-fmt-mp3 ffmpeg
+sudo apt install -y -q sox libsox-fmt-mp3
 echo Fetching:
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Aqeedah/Audios/lecture$i\_Aqeedah_Semester1.mp3 >> Aqeedah.txt ; done
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Tafsir/Audios/lecture$i\_Tafsir_Semester1.mp3 >> Tafsir.txt ; done
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Hadith/Audios/lecture$i\_Hadith_Semester1.mp3 >> Hadith.txt ; done
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Seerah/Audios/lecture$i\_Seerah_Semester1.mp3 >> Seerah.txt ; done
-for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Fiqh/Audios/lecture$i\_Fiqh_Semester1.mp3 >> Fiqh.txt ; done
+for i in 0 {1..36}; do echo http://resources.zad-academy.com/Semester1/Fiqh/Audios/lecture$i\_Fiqh_Semester1.mp3 >> Fiqh.txt ; done
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Tarbiyah/Audios/lecture$i\_Tarbiyah_Semester1.mp3 >> Tarbiyah.txt ; done
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Arabic/Audios/lecture$i\_Arabic_Semester1.mp3 >> Arabic.txt ; done
 echo Downloading:
