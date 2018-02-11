@@ -11,7 +11,7 @@ echo "Downloading:"
 for list in *.txt; do wget -q -i $list ; done
 for name in $(cat subjects.txt); do mkdir $name ; done
 echo "Converting:"
-for file in *.mp3; do name=$(echo $file | cut -d . -f1) ; sox -v $file $name.ogg rate 48000 ; done
+for file in *.mp3; do name=$(echo $file | cut -d . -f1) ; sox $file $name.ogg rate 48000 && echo $name converted; done
 echo "Moving:"
 mv *Aqeedah*.ogg Aqeedah
 mv *Tafsir*.ogg Tafsir
