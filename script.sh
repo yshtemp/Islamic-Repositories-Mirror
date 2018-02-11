@@ -8,7 +8,7 @@ for i in 0 {1..36}; do echo http://resources.zad-academy.com/Semester1/Fiqh/Audi
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Tarbiyah/Audios/lecture$i\_Tarbiyah_Semester1.mp3 >> Tarbiyah.txt ; done
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Arabic/Audios/lecture$i\_Arabic_Semester1.mp3 >> Arabic.txt ; done
 echo "Downloading:"
-for list in *.txt; do wget -q -i $list : done
+for list in *.txt; do wget -q -i $list ; done
 for name in $(cat subjects.txt); do mkdir $name ; done
 echo "Converting:"
 for file in *.mp3; do name=$(echo $file | cut -d . -f1) ; sox $file $name.ogg rate 48000 ; done
