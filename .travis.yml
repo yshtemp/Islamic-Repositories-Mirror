@@ -5,7 +5,8 @@ before_install:
 
 script:
   - travis_wait 30
-  - chmod 775 ${TRAVIS_BUILD_DIR}/IRM/script.sh && cd ${TRAVIS_BUILD_DIR}/IRM/
+  - cd ${TRAVIS_BUILD_DIR}/IRM/
+  - chmod +x script.sh
   - ./script.sh
 
 deploy:
