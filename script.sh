@@ -1,4 +1,4 @@
-sudo apt install -y -q vox libsox-fmt-mp3 ffmpeg
+sudo apt install -y -q sox libsox-fmt-mp3 ffmpeg
 echo Fetching:
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Aqeedah/Audios/lecture$i\_Aqeedah_Semester1.mp3 >> Aqeedah.txt ; done
 for i in 0 {1..22}; do echo http://resources.zad-academy.com/Semester1/Tafsir/Audios/lecture$i\_Tafsir_Semester1.mp3 >> Tafsir.txt ; done
